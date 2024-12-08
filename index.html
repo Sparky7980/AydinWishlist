@@ -7,13 +7,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Snowflakes Animation -->
-    <div class="snowflake">❄️</div>
-    <div class="snowflake">❄️</div>
-    <div class="snowflake">❄️</div>
-    <div class="snowflake">❄️</div>
-    <div class="snowflake">❄️</div>
-
     <header>
         <h1>Aydin's Wishlist</h1>
         <p>Welcome to my Christmas wishlist! Here's what I would love to have this holiday season.</p>
@@ -109,23 +102,6 @@
 
         // Attach addItem function to the button click event
         document.getElementById('add-item-btn').addEventListener('click', addItem);
-    </script>
-
-    <!-- Snowflakes falling animation -->
-    <script>
-        // Snowflakes animation
-        const snowflakes = document.querySelectorAll('.snowflake');
-
-        snowflakes.forEach(snowflake => {
-            // Generate a random X position (between 0% and 100%)
-            const randomX = Math.random();
-            snowflake.style.setProperty('--random-x', randomX); // Assign random X position using custom CSS variable
-
-            const randomDelay = Math.random() * 5;
-            const randomDuration = Math.random() * 5 + 5; // Duration between 5 and 10 seconds
-            snowflake.style.animationDelay = `${randomDelay}s`;
-            snowflake.style.animationDuration = `${randomDuration}s`;
-        });
     </script>
 </body>
 <style>
