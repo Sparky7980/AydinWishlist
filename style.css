@@ -159,7 +159,7 @@ footer p {
 /* Snowflakes Animation */
 @keyframes snowfall {
     0% { top: -10%; left: 0%; }
-    100% { top: 100%; left: 100%; }
+    100% { top: 100%; left: 0%; }
 }
 
 .snowflake {
@@ -168,8 +168,11 @@ footer p {
     color: white;
     font-size: 2rem;
     animation: snowfall 10s linear infinite;
+    /* Random start X position */
+    left: calc(100% * var(--random-x));
 }
 
+/* Snowflake variations */
 .snowflake:nth-child(odd) {
     animation-duration: 8s;
     animation-delay: 2s;
