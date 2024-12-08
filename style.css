@@ -12,6 +12,7 @@ body {
     color: #333;
     background-image: url('https://www.transparenttextures.com/patterns/snowflakes.png'); /* Snowflakes background */
     background-repeat: repeat;
+    position: relative; /* Needed for the snowflakes to be positioned correctly */
 }
 
 /* Header */
@@ -50,6 +51,7 @@ main {
     border: 2px solid #ff0000; /* Red border */
     background: url('https://www.transparenttextures.com/patterns/white-snowflakes.png') no-repeat center center;
     background-size: cover;
+    position: relative; /* Allow the tree to be positioned above */
 }
 
 .wishlist h2 {
@@ -162,7 +164,6 @@ footer p {
 
 .snowflake {
     position: absolute;
-    top: -10%;
     z-index: 9999;
     color: white;
     font-size: 2rem;
