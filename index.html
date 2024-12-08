@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aydin's Wishlist</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.10.0/firebase-database.js"></script>
 </head>
 <body>
     <header>
@@ -15,13 +18,7 @@
     <main>
         <section class="wishlist">
             <h2>My Wishlist</h2>
-            <ul>
-                <li>Gaming Console</li>
-                <li>Wireless Headphones</li>
-                <li>Smartwatch</li>
-                <li>New Laptop</li>
-                <li>Virtual Reality Headset</li>
-            </ul>
+            <ul id="wishlist-items"></ul>
         </section>
 
         <section class="add-item">
